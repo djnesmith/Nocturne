@@ -31,8 +31,6 @@ struct SettingsView: View {
                 Link("View on GitHub", destination: .repository)
             }
 
-            UpdatesSection()
-
             Text("Released under the PolyForm Noncommercial License 1.0.0.")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)

@@ -11,8 +11,6 @@ import SwiftUI
 struct NocturneApp: App {
     @State private var manager = KeyboardBacklightManager()
 
-    private let updates = UpdateManager.shared
-
     var body: some Scene {
         MenuBarExtra {
             if let scheduler = manager.scheduler {
