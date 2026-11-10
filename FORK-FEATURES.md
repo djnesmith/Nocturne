@@ -9,8 +9,8 @@ After any merge, run the tests and build, then install:
 
 ```
 xcodebuild test -project Nocturne.xcodeproj -scheme Nocturne -destination 'platform=macOS'
-xcodebuild build -project Nocturne.xcodeproj -scheme Nocturne -configuration Release -derivedDataPath build/derived
-ditto build/derived/Build/Products/Release/Nocturne.app /Applications/Nocturne.app
+xcodebuild build -project Nocturne.xcodeproj -scheme Nocturne -configuration Release -derivedDataPath build/derived.noindex
+ditto build/derived.noindex/Build/Products/Release/Nocturne.app /Applications/Nocturne.app
 ```
 
 "In the app" checks need the built app at `/Applications/Nocturne.app`.
